@@ -1,0 +1,44 @@
+.client-login {
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+    text-align: center;
+    padding: 20px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+.sign-up{
+    color:blue;
+    cursor: pointer;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 5px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 150px);
+}
+.text{
+    color: rgb(0, 153, 255);
+}
+.text:hover{
+    color: blue;
+    cursor: pointer;
+}
+.danger{
+    color: red;
+}
+.danger:hover{  
+    color: blue;
+    cursor: pointer;
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}

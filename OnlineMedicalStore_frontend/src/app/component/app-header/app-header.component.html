@@ -1,0 +1,11 @@
+
+<div class="main">
+    <div (click)="gotourl('')" [class.selected]="url === '/Home'"><img  src="../../../assets/images/medical logo.gif" width="10%" height="90%"></div>
+    <div class="nav-content">
+        <!-- <div (click)="gotourl('customer-signUp')"  [class.selected]="url === '/customer-signUp'">Customer Sign-up</div> -->
+        <div (click)="gotourl('customer-login')" [class.selected]="url === '/customer-login'">Login/SignUp</div>
+        <div (click)="gotourl('admin-login')" [class.selected]="url === '/admin-login'">Admin Login</div>
+        <div (click)="gotourl('contact-us')" [class.selected]="url === '/contact-us'">Contact Us</div>
+        <div (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">About Us</div>
+    </div>
+</div>

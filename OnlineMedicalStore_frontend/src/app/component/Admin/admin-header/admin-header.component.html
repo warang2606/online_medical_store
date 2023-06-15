@@ -1,0 +1,19 @@
+
+<div class="main">
+    <div><img  src="../../../assets/images/medical logo.gif" width="10%" height="90%" (click)="gotourl('Admin/home')" [class.selected]="url === '/Admin/home'"></div>
+    <div class="nav-content">
+       
+        <div [matMenuTriggerFor]="menu" class="user-name-item">
+            <div>{{userName}}</div>
+            <div>
+                <mat-icon>expand_more</mat-icon>
+            </div>
+        </div>
+    </div>
+</div>
+
+<mat-menu #menu="matMenu">
+    <button (click)="gotourl('/admin/logout')" mat-menu-item>
+        <mat-icon>logout</mat-icon> Logout
+    </button>
+</mat-menu>

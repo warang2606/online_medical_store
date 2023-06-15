@@ -1,0 +1,13 @@
+<div class="main">
+    <div><img  src="../../../assets/images/medical logo.gif" width="10%" height="90%"></div>
+    <div class="nav-content">
+        <div (click)="routerToLink('/Customer/Home')" [class.selected]="url === '/Customer/Home'">Home</div>
+        <div (click)="routerToLink('/Customer/cart')" [class.selected]="url === '/Customer/cart'">Cart List</div>
+        <div (click)="routerToLink('/Customer/order')" [class.selected]="url === '/Customer/order'">Order</div>
+        <div [matMenuTriggerFor]="menu" class="user-name-item"><div>{{userName}}&nbsp;</div><div><mat-icon>expand_more</mat-icon></div></div>
+    </div>
+       
+</div>
+<mat-menu #menu="matMenu">
+    <button (click)="routerToLink('/Customer/logout')" mat-menu-item><mat-icon>logout</mat-icon> Logout</button>
+  </mat-menu>

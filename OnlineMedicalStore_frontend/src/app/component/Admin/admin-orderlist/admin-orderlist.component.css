@@ -1,0 +1,23 @@
+    
+    .centered {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+     th, td{
+        
+        padding: 20px;
+    }
+
+     
+    .mat-datepicker-toggle {
+        color: black;
+    }
+    .table
+    {
+        border:1px;
+        text-align: center;
+        width: 60%;
+    }

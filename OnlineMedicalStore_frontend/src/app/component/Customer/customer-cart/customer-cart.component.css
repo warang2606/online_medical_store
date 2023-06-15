@@ -1,0 +1,39 @@
+
+.btn 
+{
+    border-radius: 50px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+.img-fluid
+{
+    
+    height: 70%;
+    width: 70%;
+}
+.container 
+{
+    width: 40%;
+    height: 40%;
+}
+.card
+{
+    padding: 10px;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+}
+.button-padding
+{
+    size: 10%;
+}
+.col-4, col-8
+
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn btn-primary
+{
+    size: 10%;
+}

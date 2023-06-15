@@ -1,0 +1,22 @@
+.admin-login {
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+    text-align: center;
+    padding: 20px;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 5px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 150px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}

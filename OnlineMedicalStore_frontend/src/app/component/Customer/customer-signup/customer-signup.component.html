@@ -1,0 +1,82 @@
+
+<br /><br />
+<div class="card">
+    <div class="main centered">
+        <h1>Register</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <label class="label">First Name</label>
+                <input class="form-control" type="text" [(ngModel)]="firstName">
+            </div>
+            <div class="col-6">
+                <label class="label">Last Name</label>
+                <input class="form-control" type="text" [(ngModel)]="lastName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label class="label">Email</label>
+                <input class="form-control" type="text" [(ngModel)]="email">
+            </div>
+            <div class="col-6">
+                <label class="label" style="display: block;">DOB</label>
+                <mat-form-field style="display: inline-flex;">
+                    <input id="date" class="form-control" matInput [matDatepicker]="picker" (dateChange)="setDOB($event)">
+                    <mat-datepicker-toggle matSuffix [for]="picker" style="height: 0;" ></mat-datepicker-toggle>
+                    <mat-datepicker #picker ></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label class="label">Gender</label><br>
+                <input class="form-check-input" type="radio" name="male" value="male" [(ngModel)]="gender"> Male
+                <input class="form-check-input" type="radio"  name="female" value="female"  [(ngModel)]="gender"> Female
+                <input class="form-check-input" type="radio"  name="other" value="other"  [(ngModel)]="gender"> Other
+                <!--<select [ngModel]="gender" class="box">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>-->
+            </div>
+            <div class="col-6">
+                <label class="label">Phone</label>
+                <input class="form-control" type="text" [(ngModel)]="phone">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label class="label">District</label>
+                <input class="form-control" type="text" [(ngModel)]="district">
+            </div>
+            <div class="col-6">
+                <label class="label">ZipCode</label>
+                <input class="form-control" type="text" [(ngModel)]="zipcode">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label class="label">State</label>
+                <input class="form-control" type="text" [(ngModel)]="state">
+            </div>
+            <div class="col-6">
+                <label class="label">Password</label>
+                <input class="form-control" type="password" [(ngModel)]="password">
+            </div>
+        </div>
+            <!-- <tr>
+                <td class="submit">
+                    <button (click)="signup()" [disabled]="firstName === '' || lastName === '' || email === '' || password === ''" mat-raised-button color="primary">Signup</button>
+                </td>
+            </tr> -->
+        
+    </div>
+    <br />
+    <div class="centered"> <button class="btn btn-primary btn-lg sign-up" (click)="signup()">Signup</button></div>
+    
+    
+    
+</div>
+<br /><br />

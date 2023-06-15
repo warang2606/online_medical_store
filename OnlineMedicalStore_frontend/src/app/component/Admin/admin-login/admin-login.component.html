@@ -1,0 +1,58 @@
+
+<!-- <div class="main admin-login">
+    <h1>Admin LogIn</h1>
+    <br />
+    <div class="item-icon">
+       <div class="icon">
+        </div><input type="text" [(ngModel)]="email" placeholder="Email">
+    </div>
+    <br />
+    <div class="item-icon">
+       <div class="icon">
+        </div><input type="password" [(ngModel)]="password" placeholder="Password">
+    </div>
+    <br />
+    <div>
+        <button (click)="signIn()" mat-raised-button color="primary">SignIn</button>
+    </div>
+</div> --> 
+
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-pharmacy-store-7365725-6030480.png"
+            class="img-fluid" alt="Sample image">
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-0.8">
+          <form>
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <p class="lead fw-normal mb-0 me-3">Admin login</p>
+            </div>
+  
+            <div class="divider d-flex align-items-center my-4">
+            </div>
+  
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form3Example3" class="form-control form-control-lg"
+              placeholder="Email address" [(ngModel)]="email" placeholder="Email" [ngModelOptions]="{standalone: true}"/>
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <input type="password" id="form3Example4" class="form-control form-control-lg"
+             placeholder="Enter password" [(ngModel)]="password" placeholder="Password" [ngModelOptions]="{standalone: true}"/>
+            </div>
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="signIn()">Login</button>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </section>

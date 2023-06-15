@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: center;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 16px;
+    margin-left: 6px;
+    padding: 8px 8px;
+  }
+  p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    background-color: white;
+  }
+  .about-section h1{
+     font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: bold;
+     font-size: xx-large;
+     color: blue;
+     margin: 50px 100px;
+  }
+  .about-section img{
+    height: 35%;
+    width: 45%;
+    margin-left: 100px;
+
+  }
+  .container {
+    padding: 16px 16px;
+    height: 200px;
+    background: rgb(240,248,255);
+    background: radial-gradient(circle, rgba(240,248,255,1) 0%, #a2eaf9 100%);
+  }
+   .info{
+    display: inline;
+   }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row{
+    margin: 0;
+    justify-content: center;
+  }
+  .title {
+    color: black;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

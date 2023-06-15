@@ -1,0 +1,40 @@
+.main
+{
+    display: flex;
+    height: 70px;
+    background-color: #ffffff;
+    align-items: center;
+    color: #41c7e2;
+    font-size: 15px;
+    font-weight: bold;
+}
+.selected {
+    border-bottom: 2px solid #41c7e2;
+    display: flex;
+    height: 60%;
+    align-items: center;
+}
+.main img {
+    height: 69px;
+    width: 250px;
+}
+.main div
+{
+    cursor: pointer;
+}
+.sign-up{
+    color:blue;
+    cursor: pointer;
+}
+.nav-content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.nav-content div {
+    margin-right: 15px;
+}
+mat-icon{
+    position: relative;
+    top: 25%;
+}

@@ -1,0 +1,66 @@
+
+<br>
+<div class="add-grossary-tab">
+
+<div class="centered">
+    <h1>Add Item</h1>
+</div>
+<br />
+<div class="centered">
+<table >
+    <tr>
+        <td>Product Name</td>
+        <td>
+            <input class="form-control" type="text" [(ngModel)]="productname" />
+        </td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>
+            <select class="form-select" [(ngModel)]="category">
+                <option *ngFor="let item of getCategoryList" [value]="item?.value">{{item?.name}}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Image</td>
+        <td>
+            <input class="form-control" type="text" [(ngModel)]="image"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            <input class="form-control" type="text" [(ngModel)]="description"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Mesurment</td>
+        <td>
+            <input class="form-control" type="text" [(ngModel)]="mesurement"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Mrp Price</td>
+        <td>
+            <input class="form-control" type="number" [(ngModel)]="mrpPrice"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>
+            <input class="form-control" type="number" [(ngModel)]="quantity"/>
+        </td>
+    </tr>
+    
+
+    <!-- <tr>
+        <td colspan="2">
+            <button (click)="onAddProduct()"  mat-raised-button color="primary">{{ isEdit ? 'Update' : 'Add Product'}}</button>
+        </td>
+    </tr> -->
+</table>
+</div>
+<br />
+<div class="centered"><button (click)="onAddProduct()" class="btn btn-primary mb-3">{{ isEdit ? 'Update' : 'Add Product'}}</button></div>
+</div>

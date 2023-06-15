@@ -1,0 +1,51 @@
+
+<br /><br />
+<div class="payment-tab">
+<div class="centered">
+  <h1>Payment</h1>
+</div>
+<br />
+<div class="centered">
+  <table>
+    <tr>
+      <td><b>Paid Amount</b></td>
+      <td><input type="text" class="form-control" disabled [(ngModel)]="totalPrice" /></td>
+    </tr>
+    <tr>
+      <td><b>NameOnCard</b></td>
+      <td><input type="text" class="form-control"  [(ngModel)]="nameOnCard" /></td>
+    </tr>
+    <tr>
+      <td><b>CardNumber</b></td>
+      <td><input type="text" class="form-control" [(ngModel)]="cardNumber" /></td>
+    </tr>
+    <tr>
+      <td><b>Expyear</b></td>
+      <td><input type="text" class="form-control"  [(ngModel)]="expYear" /></td>
+    </tr>
+    <tr>
+      <td><b>CVV</b></td>
+      <td><input type="text" class="form-control" [(ngModel)]="cvv" /></td>
+    </tr>
+    <!-- <tr>
+      <td>PaidDate</td>
+      <td>
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" (dateChange)="setPaidDate($event)"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+          <mat-datepicker #picker ></mat-datepicker>
+        </mat-form-field>
+      </td>
+    </tr> -->
+    <!-- <tr>
+      <td>PaidAmount</td>
+      <td><input type="text"  [(ngModel)]="totalPrice" disabled /></td>
+    </tr> -->
+  </table>
+</div>
+<br />
+<div class="centered">
+  <button (click)="onPayment()"  class="btn btn-primary mb-3" >Submit</button>
+</div>
+</div>

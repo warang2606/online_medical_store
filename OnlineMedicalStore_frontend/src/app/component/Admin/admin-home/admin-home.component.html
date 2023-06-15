@@ -1,0 +1,38 @@
+<h1>Welcome {{userName}}</h1>
+<div class="about-section">
+  <!-- <div class="info">
+    <h1>Features of Website</h1>
+  </div> -->
+
+  <!-- <h2 style="text-align:center">Our History</h2> -->
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Add item</h2>
+        </div>
+        <img src="https://static.vecteezy.com/system/resources/previews/003/090/114/non_2x/add-to-cart-vector.jpg"
+          (click)="gotourl('Admin/add-item')">
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>List item</h2>
+        </div>
+        <img src="https://cdn-icons-png.flaticon.com/512/8161/8161879.png" (click)="gotourl('Admin/list-item')">
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Order list</h2>
+        </div>
+        <img src="https://img.freepik.com/free-vector/online-ordering-purchase-making-buying-goods-internet-store-website-female-customer-with-tablet-adding-product-cart-cartoon-character_335657-2561.jpg?w=2000"
+  (click)="gotourl('Admin/order-list')">
+      </div>
+    </div>
+  </div>
+</div>

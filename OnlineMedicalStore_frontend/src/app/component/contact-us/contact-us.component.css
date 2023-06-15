@@ -1,0 +1,7 @@
+.container {
+    border-radius: 5px;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+    padding: 20px;
+    background: rgb(240,248,255);
+    background: radial-gradient(circle, rgba(240,248,255,1) 18%, #a2eaf9 100%);
+  }

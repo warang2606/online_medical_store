@@ -1,0 +1,17 @@
+
+.centered
+{
+    width: 50%; 
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+mat-icon
+{
+    padding: 0%;
+}
+.table
+{
+    text-align: center;
+    border: 1px;
+}
